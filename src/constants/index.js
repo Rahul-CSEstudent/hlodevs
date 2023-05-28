@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  project1,
+  project3,
+  project2
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +45,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Web Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Mobile App Development",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "DApp Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "SmartContract Development",
     icon: creator,
   },
 ];
@@ -116,55 +119,57 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Web Development",
+    company_name: "CryptoCapita",
     icon: starbucks,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained web applications using React, Redux, and TypeScript",
+      "Implemented responsive and user-friendly UI components with React Hooks and Material-UI",
+      "Collaborated with backend developers and designers to ensure high-quality and consistent user experience",
+      "Utilized Git and GitHub for version control and code review",
+      "Utilized Git and GitHub for version control and code review"
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Mobile Apps Development",
+    company_name: "CryptoCapita",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "We are a team of developers who specialize in creating beautiful and functional mobile apps using React Native or Flutter.",
+      "We have experience in developing apps with complex workflows and backend integration, such as e-commerce, social media, and productivity tools.",
+      "We are passionate about delivering high-quality products that meet the needs and expectations of our clients and users.",
+      "We use agile methodologies and best practices to ensure timely and efficient delivery of our projects.",
+      "We are always eager to learn new technologies and skills to enhance our app development capabilities."
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Dapp Development",
+    company_name: "CryptoCapita",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Experienced in developing secure and scalable web3 applications on Ethereum and Solana blockchains",
+      "Skilled in using Solidity, Rust, React and other web development tools and frameworks",
+      "Created and launched several NFT collections and marketplaces with high security and user-friendly features",
+      "Passionate about blockchain technology and its potential to revolutionize various industries and domains",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Smart Contract Development",
+    company_name: "CryptoCapita",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and deployed web3 applications with high security and scalability standards",
+      "Implemented smart contracts for various level 1 blockchains, such as Ethereum and Solana",
+      "Leveraged cutting-edge technologies and frameworks to optimize performance and user experience",
+      "Collaborated with clients and stakeholders to deliver solutions that meet their needs and expectations",
     ],
   },
 ];
@@ -198,9 +203,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "HIGHTER",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "HIGHTER is a project aimed at helping high school students make decisions about college admissions. This model leverages various data points and predictive algorithms to estimate the likelihood of a student's acceptance into different colleges",
     tags: [
       {
         name: "react",
@@ -215,14 +220,14 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: project1,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Ship Cart",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
+      "Ship Cart online platform that facilitates the buying and selling of products over internet. It serves as a virtual marketplace individuals can showcase their offerings and customers can browse, select, and purchase items conveniently.",
+   tags: [
       {
         name: "react",
         color: "blue-text-gradient",
@@ -236,13 +241,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: project2,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Dash Blog",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Dash Blog is an online platform that allows individuals, known as bloggers, to create and publish their own content in the form of articles, essays, personal stories, or informative pieces. It serves as a virtual space where bloggers around the world.",
     tags: [
       {
         name: "nextjs",
@@ -257,7 +262,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: project3,
     source_code_link: "https://github.com/",
   },
 ];
