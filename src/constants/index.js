@@ -123,7 +123,7 @@ const experiences = [
     company_name: "CryptoCapita",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "",
     points: [
       "Developed and maintained web applications using React, Redux, and TypeScript",
       "Implemented responsive and user-friendly UI components with React Hooks and Material-UI",
@@ -137,7 +137,7 @@ const experiences = [
     company_name: "CryptoCapita",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "",
     points: [
       "We are a team of developers who specialize in creating beautiful and functional mobile apps using React Native or Flutter.",
       "We have experience in developing apps with complex workflows and backend integration, such as e-commerce, social media, and productivity tools.",
@@ -151,7 +151,7 @@ const experiences = [
     company_name: "CryptoCapita",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "",
     points: [
       "Experienced in developing secure and scalable web3 applications on Ethereum and Solana blockchains",
       "Skilled in using Solidity, Rust, React and other web development tools and frameworks",
@@ -164,7 +164,7 @@ const experiences = [
     company_name: "CryptoCapita",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "",
     points: [
       "Developed and deployed web3 applications with high security and scalability standards",
       "Implemented smart contracts for various level 1 blockchains, such as Ethereum and Solana",
