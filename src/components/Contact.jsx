@@ -1,62 +1,41 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
-import sanityClient from "../client";
+import { uploadData } from "./utils";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
+
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    message: ''
   });
+  const [uploadingState, setUploadingState] = useState(0);
 
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = (e) => {
-    // write logic to get the data from form and store it in sanity.
-    e.preventDefault();
-    setLoading(true);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData); // Display form data in console or perform any desired action
 
-    const { name, email, message } = form;
+    // perform some simple checks before sending data to server
+    if (formData.name === '' || formData.phone === '' || formData.message === '') {
+      alert('Please fill all the fields');
+      return;
+    }
 
-    const data = {
-      name,
-      email,
-      message,
-    };
-
-    sanityClient
-      .create(data)
-      .then((res) => {
-        console.log(res);
-        setLoading(false);
-        setForm({
-          name: "",
-          email: "",
-          message: "",
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-        setLoading(false);
-      });
+    setUploadingState(1);
+    // send data to server
+    uploadData(formData).then((res) => {
+      console.log(res);
+      setUploadingState(2);
+    });
   };
 
 
@@ -74,7 +53,6 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
@@ -83,20 +61,20 @@ const Contact = () => {
             <input
               type='text'
               name='name'
-              value={form.name}
-              onChange={handleChange}
+              value={formData.email}
+            onChange={handleChange}
               placeholder="What's your good name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4'>Your Phone</span>
             <input
-              type='email'
-              name='email'
-              value={form.email}
+              type='tel'
+              name='phone'
+              value={formData.phone}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="Provide your contact number"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -105,7 +83,7 @@ const Contact = () => {
             <textarea
               rows={7}
               name='message'
-              value={form.message}
+              value={formData.message}
               onChange={handleChange}
               placeholder='What you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
@@ -114,9 +92,10 @@ const Contact = () => {
 
           <button
             type='submit'
+            onClick={handleSubmit}
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
-            {loading ? "Sending..." : "Send"}
+            {uploadingState === 0 ? 'Send Message' : uploadingState === 1 ? 'Sending...' : 'Sent'}
           </button>
         </form>
       </motion.div>
