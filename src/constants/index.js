@@ -177,7 +177,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "Outstanding work! Crypto Capita transformed our website into a modern and user-friendly platform. Highly recommended!",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -185,7 +185,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "Impressive mobile app development! Crypto Capita exceeded our expectations in terms of functionality and design. Thank you Great work!",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -193,7 +193,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "We were in search of a development team that could handle the complexities of crypto payment integration. Crypto Capita not only met our expectations but exceeded them. ",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
