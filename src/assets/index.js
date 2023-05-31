@@ -34,6 +34,8 @@ import project1 from "./project1.png"
 import project2 from "./project2.png"
 import project3 from "./project3.png"
 
+import testimonial1 from "./testimonial1.jpg";
+
 export {
   logo,
   backend,
@@ -65,5 +67,6 @@ export {
   tripguide,
   project1,
   project2,
-  project3
+  project3,
+  testimonial1
 };

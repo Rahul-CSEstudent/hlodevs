@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  testimonial1,
   project1,
   project3,
   project2
@@ -120,7 +121,7 @@ const technologies = [
 const experiences = [
   {
     title: "Web Development",
-    company_name: "CryptoCapita",
+    company_name: "Team HloDev",
     icon: starbucks,
     iconBg: "#383E56",
     date: "",
@@ -134,7 +135,7 @@ const experiences = [
   },
   {
     title: "Mobile Apps Development",
-    company_name: "CryptoCapita",
+    company_name: "Team HloDev",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "",
@@ -148,7 +149,7 @@ const experiences = [
   },
   {
     title: "Dapp Development",
-    company_name: "CryptoCapita",
+    company_name: "Team HloDev",
     icon: shopify,
     iconBg: "#383E56",
     date: "",
@@ -161,7 +162,7 @@ const experiences = [
   },
   {
     title: "Smart Contract Development",
-    company_name: "CryptoCapita",
+    company_name: "Team HloDev",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "",
@@ -178,17 +179,17 @@ const testimonials = [
   {
     testimonial:
       "Outstanding work! Crypto Capita transformed our website into a modern and user-friendly platform. Highly recommended!",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Balaskandan Raghunathan",
+    designation: "Manging Director",
+    company: "Capital Groups",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
       "Impressive mobile app development! Crypto Capita exceeded our expectations in terms of functionality and design. Thank you Great work!",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+    name: "Arun Prakash",
+    designation: "CEO",
+    company: "Pilkini solution",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
