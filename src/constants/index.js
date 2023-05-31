@@ -24,6 +24,7 @@ import {
   tripguide,
   threejs,
   testimonial1,
+  testimonial2,
   project1,
   project3,
   project2
@@ -179,18 +180,18 @@ const testimonials = [
   {
     testimonial:
       "Outstanding work! Crypto Capita transformed our website into a modern and user-friendly platform. Highly recommended!",
-    name: "Balaskandan Raghunathan",
+    name: "Balaskandan",
     designation: "Manging Director",
     company: "Capital Groups",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: testimonial1,
   },
   {
     testimonial:
       "Impressive mobile app development! Crypto Capita exceeded our expectations in terms of functionality and design. Thank you Great work!",
     name: "Arun Prakash",
     designation: "CEO",
-    company: "Pilkini solution",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    company: "P2lkini solution",
+    image: testimonial2,
   },
   {
     testimonial:

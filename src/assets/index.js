@@ -35,6 +35,7 @@ import project2 from "./project2.png"
 import project3 from "./project3.png"
 
 import testimonial1 from "./testimonial1.jpg";
+import testimonial2 from "./testimonial2.jpg";
 
 export {
   logo,
@@ -59,6 +60,7 @@ export {
   typescript,
   threejs,
   meta,
+  testimonial2,
   shopify,
   starbucks,
   tesla,
